@@ -1,11 +1,8 @@
-%%% Nepovinná šablona pro projekty IEL %%%
-%%% Verze: 2019/01 %%%
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{fitiel}[2021/10/05 IEL project class]
 
 \pdfminorversion=7
 
-% základní třída, odvozujeme ze třídy article
 \LoadClass[a4paper,11pt]{article}
 
 % nastavení parametrů
@@ -50,15 +47,6 @@
 % čeština
 \ifczech
     \usepackage[czech]{babel}
-    \newcommand{\logo}{
-        \includegraphics[scale=0.1,keepaspectratio]{fig/logo_cz.png}
-    }
-\else
-\fi
-
-% slovenština
-\ifslovak
-    \usepackage[slovak]{babel}
     \newcommand{\logo}{
         \includegraphics[scale=0.1,keepaspectratio]{fig/logo_cz.png}
     }
